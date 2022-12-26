@@ -638,8 +638,8 @@ textarea
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     width: 408px;
-    height: 576px;
-
+    height: 625px;
+   
 
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -695,7 +695,7 @@ textarea
     height: 24px;
     left:20px;
     top: 40px;
-    /* opacity: 0; */
+
 }
 
 
@@ -710,29 +710,71 @@ textarea
 
 .first-item
 {
+    
     margin-top:112px;
 }
 .form-item
 {
-   margin-bottom: 26px;
-   display: flex;
-   flex-direction: column;
-
-
+    position: relative;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
    
-  
-
    
+}
+.form-input:focus ~ .icon-form-phone
+{
+    fill: var(--main-color-focus);
+}
+.form-input:focus ~ .icon-form
+{
+
+    fill: var(--main-color-focus);
+
+}
+
+.icon-form
+{
+    position: absolute;
+    top:24px;
+    left: 19px;
+ 
+}
+
+.icon-svg-name
+{
+    
+   
+    width: 12px;
+    height:12px;
+}
+
+.icon-svg-phone
+{
+    width: 13px;
+    height:13px;
 }
 
 
+.icon-form-phone
+{
+    position: absolute;
+    top:26px;
+    left: 19px;
+  
+}
+
 .form-input
 {
+    
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 40px;
     width: 360px;
+    padding-left: 34px;
 }
+
+
 
 .form-area{
     margin-bottom: 16px;
@@ -768,6 +810,8 @@ textarea
     border-radius: 4px;
     width: 360px;
     height: 120px;
+    padding-top:8px ;
+    padding-left: 16px;
 }
 
 .form-label
@@ -784,6 +828,12 @@ textarea
 
 
     color: #8E8F99;
+}
+
+
+.form-input:focus
+{
+
 }
 
 .form-policy
@@ -803,7 +853,7 @@ textarea
     letter-spacing: 0.04em;
 
     color: #757575;
-    margin-bottom: 24px;
+ 
 }
 
 
@@ -811,6 +861,33 @@ textarea
 {
     color: var(--main-color-blue);
     text-decoration: none;
+}
+
+
+.button-form
+{
+    position: absolute;
+    width: 170px;
+    height: 51px;
+    left: 25%;
+    top: 87%;
+    
+
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: #4D5AE5;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-form:hover
+{
+    background: #404BBF;
 }
 /* Portfolio design */
 
