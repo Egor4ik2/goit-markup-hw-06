@@ -657,8 +657,18 @@ textarea
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
+
+.modal-button:hover, .svg-use:hover
+{
+    background: #404BBF;
+    fill: #FFFFFF;
+    
+}
 
 .svg-modal
 {
@@ -668,7 +678,7 @@ textarea
     transform: translate(-50%,-50%);
     width: 8px;
     height:8px;
-
+    
 }
 
 
@@ -829,7 +839,7 @@ textarea
 
 .form-label
 {
-    
+    margin-bottom: 4px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -936,23 +946,25 @@ textarea
 .button-form:hover
 {
     background: #404BBF;
+    
 }
 
 
 .form-footer
 {
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom:16px;
     width: 460px;
 }
 
 .input-footer
 {
-    margin-right:24px ;
+    
+    margin-top:16px ;
     width:264px ;
     height: 40px;
-
+    padding-left:16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -962,10 +974,14 @@ textarea
 }
 
 
+
 .button-footer
 {
-    position: relative;
-    margin: 0;
+   
+   
+    position: absolute;
+    top: 50%;
+    left:64%;
     width: 165px;
     height: 40px;
     background: #4D5AE5;
@@ -1100,6 +1116,10 @@ textarea
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.social-media
+{
+   margin-right:80px;
+}
 
 /* section 2 */
 
