@@ -816,8 +816,20 @@ textarea
     padding-left: 16px;
 }
 
+.text-input:focus-visible
+{
+    outline:1px solid #4D5AE5;
+}
+
+
+.form-input:focus-visible
+{
+    outline:1px solid #4D5AE5;
+}
+
 .form-label
 {
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -835,10 +847,11 @@ textarea
 
 .form-policy
 {
+    position: relative;
     width: 338px;
     height: 16px;
 
-
+    text-align: end;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -879,6 +892,9 @@ textarea
 {
     content: "";
     display: inline-block;
+    position: absolute;
+    top:0%;
+    left: 0;
     width: 16px;
     height: 16px;
     margin-right: 3px;
@@ -903,7 +919,7 @@ textarea
     height: 51px;
     left: 25%;
     top: 87%;
-    
+    cursor: pointer;
 
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -942,6 +958,7 @@ textarea
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2E2F42;
+    color: #FFFFFF;
 }
 
 
@@ -997,6 +1014,10 @@ textarea
     background: url('../image/svg-image/Frame.svg');
 }
 
+
+.text{
+    width: 264px;
+}
 /* Portfolio design */
 
 
