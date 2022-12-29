@@ -732,37 +732,36 @@ textarea
    
    
 }
-.form-input:focus ~ .icon-form-phone
+
+.form-input:focus ~ .icon-svg-name, .form-input:focus ~ .icon-svg-phone 
 {
-    fill: var(--main-color-focus);
+    fill: #4D5AE5;
 }
-.form-input:focus ~ .icon-form
-{
-
-    fill: var(--main-color-focus);
-
-}
-
 
 
 .icon-form
 {
-    position: absolute;
-    top:24px;
-    left: 19px;
+    position: relative;
  
 }
 
 .icon-svg-name
 {
     
-   
+    position: absolute;
+    left: 5%;
+    top:50%;
+    transform: translate(-50%, -50%);
     width: 12px;
     height:12px;
 }
 
 .icon-svg-phone
 {
+    position: absolute;
+    left: 5%;
+    top:50%;
+    transform: translate(-50%, -50%);
     width: 13px;
     height:13px;
 }
@@ -770,9 +769,8 @@ textarea
 
 .icon-form-phone
 {
-    position: absolute;
-    top:26px;
-    left: 19px;
+    position: relative;
+   
   
 }
 
@@ -952,9 +950,9 @@ textarea
 
 .form-footer
 {
-    position: relative;
+
     display: flex;
-    flex-direction: column;
+    gap: 24px;
     width: 460px;
 }
 
@@ -978,10 +976,7 @@ textarea
 .button-footer
 {
    
-   
-    position: absolute;
-    top: 50%;
-    left:64%;
+    margin-top: 16px;
     width: 165px;
     height: 40px;
     background: #4D5AE5;
@@ -1000,8 +995,8 @@ textarea
 
 .footer-span
 {
+    justify-content: center;
     gap: 16px;
-    margin-left:24px ;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
